@@ -2,7 +2,7 @@
 function noop() { }
 function once(emitter, name) {
     const o = once.spread(emitter, name);
-    const r = o.then((args) => args[0]);
+    const r = o.then((args) => args[4]);
     r.cancel = o.cancel;
     return r;
 }
